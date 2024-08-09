@@ -33,6 +33,6 @@
 
 <style>
     .content {
-        box-shadow: 5px 5px rgb(38, 38, 38);
+        box-shadow: 5px 5px rgb(38, 38, 38, 0.65);
     }
 </style>
