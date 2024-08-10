@@ -7,15 +7,19 @@
     import { pageStore } from "./lib/stores";
 </script>
 
-<div class="container mx-auto h-screen py-4">
-    <div class=" content w-full h-full bg-neutral-950 p-4 border-2 border-neutral-800 rounded-md">
+<div class="container py-4 mx-auto h-screen">
+    <div class="p-4 w-full h-full rounded-md border-2 content bg-neutral-950 border-neutral-800">
         <header>
             <h1 class="text-4xl font-bold">MadHouse Labs</h1>
-            <p class="text-neutral-400 max-w-2xl text-sm italic">Don't call them bitches bro!</p>
+            <p class="max-w-2xl text-sm italic text-neutral-400">L H C B L 👽</p>
             <div class="flex gap-4">
                 <NavLink page="home">Home</NavLink>
                 <NavLink page="members">Members</NavLink>
                 <NavLink page="services">Services</NavLink>
+                <a
+                    class="text-white underline transition-all hover:tracking-wider hover:font-bold focus:tracking-wider focus:font-bold"
+                    href="https://status.madhouselabs.net/status/madhouse">Status</a
+                >
             </div>
         </header>
         <Divider></Divider>
