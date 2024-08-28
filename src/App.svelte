@@ -1,10 +1,19 @@
-<script>
+<script lang="ts">
+    import { onMount } from "svelte";
+    import { pageStore } from "./lib/stores";
+    import type { Page } from "./lib/stores";
+
     import Divider from "./lib/components/Divider.svelte";
     import NavLink from "./lib/components/NavLink.svelte";
     import Home from "./lib/pages/Home.svelte";
     import Members from "./lib/pages/Members.svelte";
     import Services from "./lib/pages/Services.svelte";
-    import { pageStore } from "./lib/stores";
+    import Missing from "./lib/pages/Missing.svelte";
+
+    onMount(() => {
+        const hash = window.location.hash.replace("#", "") as Page;
+        if (hash) pageStore.set(hash);
+    });
 </script>
 
 <div class="container py-4 mx-auto h-screen">
@@ -30,6 +39,8 @@
                 <Members></Members>
             {:else if $pageStore === "services"}
                 <Services></Services>
+            {:else if $pageStore === "missing"}
+                <Missing></Missing>
             {/if}
         </main>
     </div>

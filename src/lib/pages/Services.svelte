@@ -6,9 +6,11 @@
 
 <ServiceLinkTitle>File Hosting</ServiceLinkTitle>
 <ServiceLinkContainer>
-    <ServiceLink href="https://cloud.madhouselabs.net">Nextcloud</ServiceLink>
     <ServiceLink href="https://cdn.madhouselabs.net">cirro's file uploader</ServiceLink>
     <ServiceLink href="https://mono.dev.madhouselabs.net">monofile</ServiceLink>
+    <ServiceLink href="https://cloud.madhouselabs.net">
+        Nextcloud <span class="text-xs text-neutral-400">[deprecated]</span>
+    </ServiceLink>
 </ServiceLinkContainer>
 
 <ServiceLinkTitle>Game Services</ServiceLinkTitle>
@@ -18,6 +20,7 @@
 
 <ServiceLinkTitle>Social Services</ServiceLinkTitle>
 <ServiceLinkContainer>
+    <ServiceLink href="https://mail.madhouselabs.net">Mail</ServiceLink>
     <ServiceLink href="https://chadthundercock.com">Mastodon</ServiceLink>
 </ServiceLinkContainer>
 
@@ -32,4 +35,7 @@
     <ServiceLink href="https://auth.madhouselabs.net">Keycloak</ServiceLink>
     <ServiceLink href="https://minio-console.madhouselabs.net">Minio</ServiceLink>
     <ServiceLink href="https://coolify.madhouselabs.net">Coolify</ServiceLink>
+    <ServiceLink href="https://portainer.madhouselabs.net">
+        Portainer <span class="text-xs text-neutral-400">[deprecated]</span>
+    </ServiceLink>
 </ServiceLinkContainer>
